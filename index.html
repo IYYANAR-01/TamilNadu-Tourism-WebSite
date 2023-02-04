@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/79b594a165.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+<div>
+    <div id="homeTop" data-aos="fade-right" data-aos-duration="1500">
+        <img src="homeImg/logo.png" alt="logo" id="logo" style="height: 100%;width: 13%;margin: -4vh 2vw;position: relative;" >
+        <div id="topButsDiv">
+            <div class="but" id="but1"><span id="homeBut" class="innerBut"><b>Home</b></span></div>
+            <div class="but" id="but2"><span id="destBut" class="innerBut"><b>Destinations</b></span></div>
+            <div class="but" id="but3"><span id="expBut" class="innerBut"><b>Experiences</b></span></div>
+            <div class="but" id="but4"><span id="districtBut" class="innerBut"><b>Districts</b></span></div>
+            <div class="but" id="but5"><span id="galleryBut" class="innerBut"><b>Gallery</b></span></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- back to top icon -->
+
+<div id="backToTop"><a href="#"><i class="fa-solid fa-angle-up"></i></a></div>
+
+
+
+    <div id="visibleHomeTop"></div>
+
+    
+
+<div id="wholeContainer" style="width: 100%;height: 100%;">
+
+
+
+    <div id="mainContainer">
+
+        <div id="homeContainer">
+            <div id="holeImgDiv">
+
+            </div>
+        
+        
+            <div id="welcomeDiv" style="font-size: 3vh;">
+                <h1 ><b><strong>Welcome to Tamil Nadu!</strong></b></h1>
+                <pre>A potpourri of vibrant cultures, exotic destinations and enduring memories; welcome to one of<br>
+                                              the heartlands of human civilization.</pre>
+                <h5>Tamil Nadu - where stories never end.</h5>
+            </div>
+        
+        
+        
+            <div id="aboutDiv">
+                <div id="aboutInner">
+                    <div id="aboutPara">
+                        <pre>
+                        Tamil Nadu, a South Indian state, is famed for its Tamil-style <br>
+                        architectural temples. In Madurai, Meenakshi Amman Temple has <br>
+                        high ‘gopuram’ towers ornamented with colourful figures. On <br>
+                        Pamban Island, Ramanathaswamy Temple is a pilgrimage site. <br>
+                        The town of Kanyakumari, at India’s southernmost tip, is the <br>
+                        site of ritual sunrises. Capital Chennai is known for beaches<br>
+                        and landmarks including 1644 colonial Fort St. George.
+                        </pre>
+                    </div>
+                    <div id="mapImg">
+                        <img src="homeImg/Tnmap.png" alt="map" style="box-shadow: 20px 40px 30px rgba(0,0,0,.5);height: 60%;width: 75%;" >
+                    </div>
+                        
+                </div>
+            </div>
+        
+            <!-- <hr> -->
+        
+            <!-- <div id="tamilDiv">
+                <div style="width: 100vw;display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                    <img src="homeImg/oldest-lang.jpg" data-aos="fade-right" data-aos-duration="1500"  class="tamilImg">
+                    <span style="font-size: 3vh;" data-aos=fade-up data-aos-delay="500"><b>Tamil</b> is one of the ancient languages<br><br> in the world</span>
+                </div>
+
+                <div style="width: 100vw;height:50vh;display: flex;flex-direction: row;justify-content: space-around;align-items: center;margin-top: -10vh;">
+                    <span style="font-size: 3vh;" data-aos=fade-up data-aos-delay="500" >The most famous line <br><br><b>'YAADUM OORE YAVARUM KELIR'</b></span>
+                    <img src="homeImg/yaadumoore.jpg" data-aos=fade-left data-aos-duration="1500"  class="tamilImg">
+                </div>
+                
+            </div> -->
+        
+        
+            <!-- <div style="height: 200px;background-color: aliceblue"></div> -->
+        
+        
+            <div id="unescoDiv">
+                <div >
+                    <div id="unesPara"  style="background-color: rgb(33, 37, 41);">
+                        <img src="homeImg/unesHeadImg.png" style="height:100%;width:100%">
+                    </div>
+                    <div id="unesPara"  style="background-color: rgb(240,240,240);">
+                        <p>
+                Tamil Nadu, the cultural capital of India, boasts of <br>
+                five UNESCO World Heritage Sites which you should <br>
+                not miss
+                        </p>
+                    </div>
+                </div>
+                <div id="unesImgDiv" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-duration="1000" >
+                    <img src="homeImg/UNESCO img/img1.png" id="unesImg" loading="lazy">
+                </div>
+                <div id="unesImgChange" data-aos=fade-up data-aos-delay="1000">
+                    <div onclick="back()" class="changeBut"><i class="fa-solid fa-caret-left"></i></div>
+                    <div onclick="next()" class="changeBut"><i class="fa-solid fa-caret-right"></i></div>
+                </div>
+            </div>
+            <div style="height: 8vh;width: 100%;background-color:aliceblue;"></div>
+
+        
+            <div id="placeToVisitDiv">
+                <div style="width:70%;font-size: 2vh;">
+                    <h1>Places to visit</h1><br>
+                    <p>Discover Tamil Nadu's unique destinations - from UNESCO World Heritage <br><br>Sites to soothing beaches and hill stations.</p>
+                </div>
+                <div id="visitImgDiv">
+                    <div id="placeToVisitImg">
+                        <div class="visitImg">
+                            <img src="homeImg/placeToVisit/img1.png" class="visitingImage">
+                            <h1 class="expText">Ooty</h1>
+                        </div>
+                        <div class="visitImg">
+                            <img src="homeImg/placeToVisit/img2.png" class="visitingImage">
+                            <h1 class="expText">Kanniyakumari</h1>
+                        </div>
+                        <div class="visitImg">
+                            <img src="homeImg/placeToVisit/img3.png" class="visitingImage">
+                            <h1 class="expText">Madurai</h1>
+                        </div>
+                        <div class="visitImg">
+                            <img src="homeImg/placeToVisit/img4.png" class="visitingImage">
+                            <h1 class="expText">Kodaikanal</h1>
+                        </div>
+                        <div class="visitImg">
+                            <img src="homeImg/placeToVisit/img5.png" class="visitingImage">
+                            <h1 class="expText">Thanjavur</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="width:100vw"><span id="expDist" class="explorePages">Explore <i class="fa-sharp fa-solid fa-arrow-right"></i></span></div>
+
+        
+            <div style="height: 8vh;width: 100%;background-color:aliceblue;"></div>
+        
+            <div id="placeToVisitDiv">
+                <div style="width:70%;font-size: 2vh;">
+                    <h1>Attractions</h1><br>
+                    <p>Here's a list of top attractions in Tamil Nadu that you must experience at the <br><br>very next opportunity.</p>
+                </div>
+                <br>
+                <div id="attractionDiv">
+                    <div id="atractInner1" >
+                        <div id="atractImgDiv1">
+                            <img src="homeImg/adventure img/img1.png" class="atractImg">
+                            <h1 class="expText">Temples</h1>
+                        </div>
+                        <div id="atractImgDiv2">
+                            <img src="homeImg/adventure img/img2.png" class="atractImg">
+                            <h1 class="expText">Heritage</h1>
+                        </div>
+                        <div id="atractImgDiv2">
+                            <img src="homeImg/adventure img/img3.png" class="atractImg">
+                            <h1 class="expText">Wildlife</h1>
+                        </div>
+                    </div>
+                    <div id="atractInner1" >
+                        <div id="atractImgDiv2">
+                            <img src="homeImg/adventure img/img4.png" class="atractImg">
+                            <h1 class="expText">Hills</h1>
+                        </div>
+                        <div id="atractImgDiv2">
+                            <img src="homeImg/adventure img/img5.png" class="atractImg">
+                            <h1 class="expText">Adventure</h1>
+                        </div>
+                        <div id="atractImgDiv1">
+                            <img src="homeImg/adventure img/img6.png" class="atractImg">
+                            <h1 class="expText">Cuisine and Gastronomy</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="width:100vw;margin-top: 5vh;"><span id="expGallery" class="explorePages">Explore <i class="fa-sharp fa-solid fa-arrow-right"></i></span></div>
+
+        
+            <div style="height: 15vh;width: 100%;background-color:aliceblue;"></div>
+        
+        
+            <div id="barthanatiyamDiv">
+                <div style="width:80%;font-size: 2vh;">
+                    <h1>Bharatanatyam</h1>
+                    <p>The Dance of Tamil Nadu</p>
+                </div>
+                <div id="barathaDiv">
+                    <div id="barathaImgDiv" >
+                        <img src="homeImg/barathanatiyam.jpg" id="barathanatiyam">
+                    </div>
+                    <div id="barathaPara">
+                        <p>
+                            Bharatanatyam is a dance of Tamil Nadu <br><br>in southern India. 
+                            It traces its origins back <br><br>to the Natyashastra, an ancient 
+                            treatise <br><br>on theatre written by the mythic priest <br><br>Bharata. 
+                            Originally a temple dance for <br><br>women, bharatanatyam often 
+                            is used to <br><br>express Hindu religious stories and <br><br>devotions.
+                        </p>
+                    </div>
+                </div>
+        
+            </div>
+        
+            <div style="height: 12vh;width: 100%;background-color:aliceblue;"></div>
+        
+            <div id="kabadiContainer">
+                <div style="width:80%;font-size: 2vh;">
+                    <h1>Kabaddi</h1>
+                    <p>The Sport of Tamil Nadu</p>
+                </div>
+                <div id="kabaddiDiv">
+                    <div id="kabaddiImgDiv" >
+                        <img src="homeImg/kabaddi.jpg" id="kabaddi">
+                    </div>
+                    <div id="barathaPara">
+                        <p>
+                            Kabaddi is a state sport of Tamil Nadu. <br><br>It’s derived from the 
+                            Tamil word ‘kai-pudi’,<br><br> meaning ‘to hold hands’. Kabaddi is 
+                            an ancient <br><br>contact sport which’s origins can be traced <br><br>back 
+                            to about 4000 years ago in India<br><br> during the Mahabharata period. 
+                            <!-- Kabadi <br><br>is played as a mock up practise <br><br>prior to the traditional 
+                            sport Jallikattu <br><br>later it is spread over as a commercial sport.  -->
+                   
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div style="height: 12vh;width: 100%;background-color:aliceblue;"></div>
+        
+            <div id="ExperiencesContainer">
+                <div style="width:76%;font-size: 2vh;" >
+                    <h1>Experiences</h1><br>
+                    <p>If you're looking for some of the best travel experiences to explore in Tamil Nadu, <br><br>you've arrived at the right spot!</p>
+                </div>
+                <div id="expriDiv">
+                    <div class="expriImgDiv">
+                        <img src="homeImg/Experiences/img1.png" alt="experience" class="expriImg">
+                        <h1 class="expText" >Adventure</h1>
+                    </div>
+                    <div class="expriImgDiv">
+                        <img src="homeImg/Experiences/img2.png" alt="experience" class="expriImg">
+                        <h1 class="expText" >Food</h1>
+                    </div>
+                    <div class="expriImgDiv">
+                        <img src="homeImg/Experiences/img3.png" alt="experience" class="expriImg">
+                        <h1 class="expText">Festival</h1>
+                    </div>
+                    <div class="expriImgDiv">
+                        <img src="homeImg/Experiences/img4.png" alt="experience" class="expriImg">
+                        <h1 class="expText">Spritual</h1>
+                    </div>
+                    
+                </div>
+            
+                <div style="width:100vw"><span id="expExperi" class="explorePages">Explore <i class="fa-sharp fa-solid fa-arrow-right"></i></span></div>
+                
+            </div>
+
+
+
+        
+        
+        
+            <div id="ExperiencesContainer">
+                <div style="width:76%;font-size: 2vh;" >
+                    <h1>Destinations</h1><br>
+                    <p>Discover Tamil Nadu's unique destinations</p>
+                </div>
+                <div id="expriDiv">
+                    <div class="expriImgDiv">
+                        <img src="homeImg/destinations/img1.png" alt="experience" class="expriImg">
+                        <h1 class="expText" >Hills</h1>
+                    </div>
+                    <div class="expriImgDiv">
+                        <img src="homeImg/destinations/img2.png" alt="experience" class="expriImg">
+                        <h1 class="expText" >Beaches</h1>
+                    </div>
+                    <div class="expriImgDiv">
+                        <img src="homeImg/destinations/img3.png" alt="experience" class="expriImg">
+                        <h1 class="expText" >Pilgrim Centers</h1>
+                    </div>
+                    <div class="expriImgDiv">
+                        <img src="homeImg/destinations/img4.png" alt="experience" class="expriImg">
+                        <h1 class="expText" >Water Falls</h1>
+                    </div>
+                    
+                </div>
+            
+                <div style="width:100vw"><span id="expDest" class="explorePages">Explore <i class="fa-sharp fa-solid fa-arrow-right"></i></span></div>
+                
+            </div>
+
+
+
+        
+            
+            <div id="ExperiencesContainer">
+                <div style="width:76%;font-size: 2vh;" >
+                    <h1>Start Planning</h1><br>
+                    <p>Here is some useful information we would like you to know before <br><br>you jump on a plane.</p>
+                </div>
+                <div id="expriDiv">
+                    <div class="homeInner">
+                        <img src="homeImg/startPlan/img1.png" alt="experience" class="expriImg">
+                        <h2 class="expText" >Visa Guide</h2>
+                    </div>
+                    <div class="homeInner">
+                        <img src="homeImg/startPlan/img2.png" alt="experience" class="expriImg">
+                        <h2 class="expText" >Tamil Nadu at a Glance</h2>
+                    </div>
+                    <div class="homeInner">
+                        <img src="homeImg/startPlan/img3.png" alt="experience" class="expriImg">
+                        <h2 class="expText" >Travel Tips</h2>
+                    </div>
+                    <div class="homeInner">
+                        <img src="homeImg/startPlan/img4.png" alt="experience" class="expriImg">
+                        <h2 class="expText" >Airports</h2>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        
+        
+        
+            <div id="locationContainer">
+                <h1>Location / Map</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2006475.6002738376!2d77.16861384610228!3d10.819143614670878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c582b1189633%3A0x559475cc463361f0!2sTamil%20Nadu!5e0!3m2!1sen!2sin!4v1673693485605!5m2!1sen!2sin" width="75%" height="85%" style="border:0;" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        
+        
+            <div id="tntourismContainer">
+                <span><h1>#TamilnaduTourism</h1><p>Check out the world know your way of experiencing Tamil Nadu</p></span>
+                <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/kanyakumari-1654606933_ad859ea28cce8a0094dc.webp" alt="tnTour" data-aos="fade-left"  data-aos-duration="2000" style="height: 75%;width: 78vw;">
+            </div>
+        
+        
+            <hr style="margin-top:12vh ;">
+
+        </div>
+
+    
+
+
+        <div class="homeInnerPage">
+            <div id="visaguide">
+                <h1>Visa</h1>
+                <div id="innerHomeButDiv">
+                    <span class="home">Home</span>/
+                    <span class="back">Back</span>
+                </div><br>
+                <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/airports-1656486487_6698adb98b2f15f19118.webp"><br><br>
+                <p>A visa is needed for travel to India, including the state of Tamil Nadu. The Government of India requires that all foreign nationals seeking an entry into India, submit an Indian Visa Application. </p>
+                <p>This process of application filing can be done either by a physical visit to the Indian embassy or by completing the India Visa Application online (https://indianvisaonline.gov.in/). In the online Visa Application, when the Immigration Officer has approved, the electronic eVisa for India is dispatched to your email id. </p>
+                <p>The E-Visa needs to be applied for online in advance of travel and travellers must possess a machine readable passport.</p>
+            </div>
+        </div>
+
+
+        <div class="homeInnerPage">
+            <div id="glance">
+                <h1>Tamil Nadu at a Glance</h1>
+                <div id="innerHomeButDiv">
+                    <span class="home">Home</span>/
+                    <span class="back">Back</span>
+                </div><br>
+                <p style="color: gray;font-size: 3vh;">Covering an area of 130,058 sq km, Tamil Nadu is the tenth largest state in India. The bordering states are Kerala (west), Karnataka (north-west) and Andhra Pradesh (north). To the east of the state is the Bay of Bengal, and the state encircles the union territory of Puducherry. The southernmost tip of the Indian peninsula is in Tamil Nadu</p>
+                <h1>Seasons</h1>
+                <img src="https://www.tamilnadutourism.tn.gov.in/img/season.webp" style="height:70vh;width:60vw">
+                <p>The summer in Tamil Nadu starts in March and ends in May. The temperature may rise up to 40°C, but the hill stations in the state are the best places to visit to escape the heat of plains. The monsoon season is from June till September. The weather will be humid due to heavy downpours and the temperature will hover between 24ºC and 30ºC. The winter in Tamil Nadu stretches from October to February. This season is favourable for sightseeing trips and the temperature ranges from 21ºC to 30ºC during this period.</p>
+                <h1>History</h1>
+                <img src="https://www.tamilnadutourism.tn.gov.in/img/history.webp"style="height:70vh;width:60vw">
+                <p>Tamil Nadu is much older than North India. It existed as part of the continent (called Lemuria or Kumarik Kandam) that linked Africa and Australia. The Tamils or the Dravidians are therefore one of the earliest races in the world. Prehistoric tools, weapons and burial sites have been discovered in various parts of Tamil Nadu.</p>
+                <h1>Festivals</h1>
+                <img src="https://www.tamilnadutourism.tn.gov.in/img/festival.webp"style="height:70vh;width:60vw">
+                <p>Tamil Nadu is the land of festivals and the easiest way to understand the culture of a region is to attend a local festival. Some of the popular state festivals are International Yoga Festival (Puducherry), Pongal (statewide), Thyagaraja Aradhana (Thiruvaiyaru), Teppam (Float) Festival (Madurai), Natyanjali Dance Festival (Chidambaram), Chithirai Festival (Madurai), Karthikai Deepam Festival (statewide), Chennai Festival of Music & Dance (Chennai) and Mamallapuram Dance Festival (Mamallapuram).</p>
+            </div>
+        </div>
+
+        <div class="homeInnerPage">
+            <div id="travelTip">
+                <h1>Travel Tips</h1>
+                <div id="innerHomeButDiv">
+                    <span class="home">Home</span>/
+                    <span class="back">Back</span>
+                </div><br>
+                <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/travel-tip-1655196559_24ea51768bb62ae293b7.webp"><br><br>
+                <h1>Clothing</h1>
+                <p>Some parts of Tamil Nadu, particularly smaller towns and villages, have traditional styles of dressing. Dress codes for select religious places can include covering your head, being barefoot, among others. Try to find out about local customs and traditions while visiting such places. </p>
+                <h1>Food</h1>
+                <p>It is better to drink only bottled/boiled water. Dispose of drinking water bottles properly after their use. Don’t accept take/accept food and drinks from strangers. </p>
+                <h1>Shopping</h1>
+                <p>Prices are fixed and quality certified in government handicraft shops/emporia. Insist on your credit/debit card being swiped/imprinted in your presence in case payment is made by card. Try to obtain an invoice for all purchases. </p>
+                <h1>Sightseeing</h1>
+                <p>Ascertain visiting hours and closed days before visiting museums, monuments, palaces, etc. Smoking and drinking of alcohol is not allowed at public places. Government trained and authorized guides speaking English and other foreign languages can be hired at most places. Do ask the guide to show his photo-identity proof. Buy air, rail and bus tickets through authorized travel agents or tour operators only, with a valid invoice for the transaction.</p>
+                <h1>Safe and Secure</h1>
+                <p>Don’t accept lift from strangers. Avoid isolated places and going out alone late at night. Do not open your hotel room without safety latch or without verifying the identity of the person.</p>
+            </div>
+        </div>
+
+       <div class="homeInnerPage">
+            <div id="airport">
+                <h1>Airports</h1>
+                <div id="innerHomeButDiv">
+                    <span class="home">Home</span>/
+                    <span class="back">Back</span>
+                </div><br>
+                <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/airports-1656486487_6698adb98b2f15f19118.webp"><br><br>
+                <p>The state of Tamil Nadu has one of the best air networks in the country. Almost all the major cities of the state have their own airports. The four international airports in Chennai, Coimbatore, Tiruchirapalli and Madurai serve the main four regions of the state. The three domestic airports are in Salem, Tuticorin and Puducherry. Besides these seven civilian airports, the state has bases of the Indian Air Force, namely Thanjavur AFS, Tambaram AFS, Coimbatore AFS and two naval air stations INS Rajali and INS Parundu of the Indian Navy.</p>
+                <h3>Chennai International Airport</h3>
+                <p>The biggest airport in Tamil Nadu, Chennai International Airport is the aviation hub in South Asia. One of the busiest airports after Delhi, Mumbai and Bengaluru, the Chennai airport has flights to all the major cities in the world.</p>
+                <h3> Coimbatore International Airport</h3>
+                <p>A prominent airport in Tamil Nadu, Coimbatore International Airport is well connected to other cities and towns such as Chennai, Munnar, Bengaluru and Ooty.  Tiruppur, Palakkad, Pollachi and Mettupalayam are all easily accessible from the airport. </p>
+                <h3>Tiruchirapalli International Airport</h3>
+                <p>Tiruchirapalli or Trichy International Airport is the smallest airport in India and is situated close to the centre of the city . The airport provides easy access to Namakkal, Karuru, Pudukkottai, Thanjavur, Ariyalur and Perambalur districts of Tamil Nadu.</p>
+                <h3>Madurai International Airport</h3>
+                <p>Located close to the state highway 37 and the Madurai railway station, Madurai International Airport is the fourth busiest airport in Tamil Nadu in terms of passenger handling capacity.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+        
+            <div id="footer">
+                <span>Toll Free No: 1800-425-31111 (Within India only) Department of Tourism, Government of Tamil Nadu, #2, Wallajah Road, Chennai - 600002<br><br>
+                    Fax: +044 25333385, 25333567 | Email: tourism@tn.gov.in</span>
+        
+                <span>All rights reserved © Tamil Nadu Tourism 2023. Copyright | Terms of Use | Cookie Policy | Contact Us<br><br>
+                    Developed & Maintained by Invis Private Limited.</span>
+        
+                <img src="homeImg/socialMediaIcon.png" alt="media" id="mediaIcon">
+            </div>
+            
+    
+</div>
+    
+
+
+
+
+    
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

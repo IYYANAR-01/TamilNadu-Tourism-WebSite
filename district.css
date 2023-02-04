@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#DistHeaderImg{
+    height: 100vh;
+    width:100vw;
+    background-image: url("https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/kanyakumari-1654606933_ad859ea28cce8a0094dc.webp");
+    background-size: 100% 100%;
+    position: relative;
+}
+ 
+#distHeadDiv{
+    height: 100vh;
+    width: 50vw;
+    color: snow;
+    font-size: 5vh;
+    text-align: center;
+    margin: 0vh 25vw;
+    position: absolute;
+}
+
+#distHead{
+    margin-top: 41vh;
+    position: relative;
+    animation: text 3s ;
+}
+
+@keyframes text {
+    0%{
+        color:transparent;
+        margin-top: 45vh;
+    }
+    50%{
+        letter-spacing: 25px;
+        margin-top: 43vh;
+    }
+}
+
+#distHeadPara{
+    animation: para 4s;
+}
+
+@keyframes para {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+#districtBody{
+    height: 250vh;
+    width: 95vw;
+    margin: 10vh -3vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 10vh 0vw;
+    align-items: center;
+    justify-items: center;
+}
+
+.districtImgDiv{
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+    cursor: pointer;
+    display: none;
+    transition: margin 2s;
+    margin-left: 0vw;
+}
+.districtImg{
+    height: 100%;
+    width:100%;
+    transition: transform 2s;
+}
+.districtText{
+    position: absolute;
+    margin: -6vh 2vw;
+    color: white;
+    transition: margin 1s;
+}
+.districtTextPara{
+    position: absolute;
+    margin: 55vh -23vw;
+    transition: margin 1s;
+    color: aliceblue;
+}
+
+
+.districtImgDiv:hover .districtText{
+    margin: -10vh 2vw;
+}
+.districtImgDiv:hover .districtTextPara{
+    margin: 50vh -23vw;
+}
+.districtImgDiv:hover .districtImg{
+    transform: scale(1.3);
+}
+.distInnerMainImg{
+    height: 100%;
+    width:100%
+}
+.distInnerHead{
+    margin: -15vh 5vw;
+    color: white;
+    font-size: 6vh;
+}
+
+#distTopButsOuter{
+    height: 10vh;
+    width: 100vw;
+    background-color:rgb(230, 230, 230);
+    /* margin-top: -18px; */
+}
+#distTopButs{
+    height: 10vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2.5vh;
+    margin-left: 2.5em;
+    font-weight:lighter;
+    cursor: pointer;
+}
+
+#backDistButs:hover{
+    color: #FBC252;
+}
+.distInnerBodyTop{
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+}
+.distAboutDiv{
+    height: 100%;
+    width: 65%;
+    border: 1px solid;
+    padding:6vh 10vh;
+    font-size: 2vh;
+    line-height: 4vh;
+    color: gray;
+}
+.DistAboutHead{
+    color: rgb(181, 181, 181);
+    font-size: 2.8vh;
+}
+.weatherDiv{
+    height: 100%;
+    width: 34%;
+    border: 1px solid grey;
+}
+.weather{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: .1vh solid grey;
+    width: 100%;
+    height: 30%;
+    font-size: 2.5vh;
+}
+.weatherMap{
+    height: 55%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weatherMapImg{
+    height: 90%;
+    width: 90%;
+
+}
+
+
+
+
+/* inner pages */
+
+.distInnerPages{
+    display: none;
+}
+.distInnerMain{
+    height: 100vh;
+    width:100vw;
+    position: relative;
+}
+
+
+
+
+#footer{
+    height: 40vh;
+    width: 100vw;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    color: #f0f8ff;
+    margin-top: 12vh;
+    font-size: 2vh;
+}
+#mediaIcon{
+    height: 8vh;
+    width: 18vw;
+    cursor: pointer;
+}

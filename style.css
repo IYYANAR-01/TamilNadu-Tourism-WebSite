@@ -1,0 +1,600 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    /* font-size: 2vh; */
+}
+
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: aliceblue;
+    color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* home page........... ........................................................*/
+
+
+
+
+#homeTop{
+    height: 10vh;
+    width: 101vw;
+    /* background-color:#faeaba; */
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    margin: 0px;
+    float:left;
+    z-index: 3;
+    transition:margin 1s;
+    font-size: 2vh;
+    border: .2vh solid;
+}
+#holeImgDiv{
+    width: 100vw;
+    height: 100vh;
+    background-size: 99.9% 99.9%;
+    /* transform: scale(1.3); */
+    transition: 1s background-image;
+    z-index: 1;
+}
+#visibleHomeTop{
+    position:fixed;
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    float: left;
+    z-index: 2;
+}
+
+.but{
+    height: 9vh;
+    width: 10vw;
+    text-align: center;
+    padding-top: 3.5vh;
+}
+
+.innerBut:hover{
+    color:coral;
+    cursor: pointer;
+}
+
+#topButsDiv{
+    /* margin-left: 40%; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+
+
+.homeImg{
+    transition: 5s;
+    opacity: 5;
+}
+
+
+
+#welcomeDiv{
+    height: 60vh;
+    width: 100vw;
+    background-color: rgb(225, 225, 225);
+    float: inline-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-top: 10vh; */
+    z-index: 2;
+    /* position: absolute; */
+}
+
+
+
+#aboutDiv{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+#aboutInner{
+    height: 100%;
+    width: 85vw;
+    /* background-color: #f0f8ff; */
+    /* background-color: rgb(242, 242, 242); */
+    display: flex;
+    z-index: -1;
+    flex-direction: row;
+}
+#aboutPara{
+    height: 100%;
+    width: 50%;
+    font-size:2vh;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+
+}
+#mapImg{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+
+
+
+.tamilImg{
+    height: 32vh;
+    width: 30vw;
+    box-shadow: 20px 40px 30px rgba(0,0,0,.5);
+    margin-top: -5vh;
+    z-index: 1;
+    margin-left: 0vw;
+}
+#tamilDiv{
+    width: 98%;
+    z-index: -1;
+}
+
+
+
+
+#unescoDiv{
+    height: 120vh;
+    width: 100vw;
+    /* margin-top: 200px; */
+    /* background-color: #f0f8ff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+#unesPara{
+    height: 20vh;
+    width: 35vw;
+    /* background-color:rgb(230, 230, 230); */
+    float: left;
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    line-height: 2;
+    font-size: 2vh;
+}
+#unesImgDiv{
+    background-color: rgb(152, 150, 150);
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    /* transition: 5s all; */
+    overflow: hidden;
+}
+#unesImg{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* transition: 2s all; */
+
+}
+#unesImgChange{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 5vh;
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: -1%;
+}
+.changeBut{
+    height: 10vh;
+    width: 3vw;
+    color: white;
+    text-align: center;
+    background-color:grey;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.changeBut:hover{
+    cursor: pointer;
+    height: 15vh;
+}
+
+
+#placeToVisitDiv{
+    height: 90vh;
+    width: 100vw;
+    background-color: #f0f8ff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#visitImgDiv{
+    height: 55%;
+    width: 72%;
+    overflow: hidden;
+}
+#placeToVisitImg{
+    height: 100%;
+    width: 170%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    transition: margin 2s;
+}
+
+#placeToVisitImg:hover {
+    margin-left:-50vw;
+    cursor: pointer;
+ }
+
+.visitImg{
+    height: 100%;
+    width: 18%;
+    color:white;
+}
+.visitingImage{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+#attractionDiv{
+    height: 75%;
+    width: 72%;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+#atractInner1{
+    height: 47%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#atractImgDiv1{
+    height: 100%;
+    width: 48%;
+    overflow: hidden;
+}
+#atractImgDiv2{
+    height: 100%;
+    width: 23%;
+    overflow: hidden;
+}
+
+
+.atractImg{
+    height: 100%;
+    width: 100%;
+    transition-duration: .6s;
+}
+
+.atractImg:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.expText{
+    cursor: pointer;
+    transform: scale(1);
+    z-index: 2;
+}
+
+
+
+#barthanatiyamDiv{
+    
+    height: 90vh;
+    width: 100vw;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2vh;
+}
+#barathaImgDiv{
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+}
+#barathanatiyam{
+    height: 100%;
+    transition-duration: .6s;
+    width: 100%;
+}
+
+#barathanatiyam:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#barathaPara{
+    font-size:3vh;
+    display: flex;
+    align-items: center;
+    width: 53%;
+    text-align: left;
+}
+#barathaDiv{
+    width: 80%;
+    height: 80%;
+    background-color:rgb(235, 231, 231);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+#kabadiContainer{
+    height: 80vh;
+    width: 100%;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: xx-large;
+}
+#kabaddiDiv{
+    width: 80%;
+    height: 90%;
+    background-color:rgb(235, 231, 231);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#kabaddiImgDiv{
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+}
+#kabaddi{
+    height: 100%;
+    transition-duration: .6s;
+    width: 135%;
+}
+
+#kabaddi:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+#ExperiencesContainer{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+#expriDiv{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    overflow: hidden;
+    justify-content: space-around;
+    color: white;
+}
+.expriImgDiv{
+    height: 80%;
+    width: 20%;
+    overflow: hidden;
+}
+
+.expriImg{
+    height: 100%;
+    width: 100%;
+    transition-duration: .6s;
+}
+
+.expriImgDiv:hover .expriImg{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.expText{
+    margin: -7vh 2vw;
+    transition-duration: .6s;
+    font-size: 3vh;
+}
+.expriImgDiv:hover .expText{
+    margin: -10vh 2vw;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+
+
+.homeInner{
+    height: 80%;
+    width: 20%;
+    overflow: hidden;
+}
+.homeInner:hover .expriImg{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.homeInner:hover .expText{
+    margin: -10vh 2vw;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+
+
+
+#locationContainer{
+    margin-top: 8vh;
+    height: 110vh;
+    width: 100vw;
+    font-size: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#tntourismContainer{
+    margin: 5vh 11vw;
+    height: 100vh;
+    width: 70vw;
+    font-size: 3vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#footer{
+    height: 40vh;
+    width: 100vw;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    color: #f0f8ff;
+    margin-top: 12vh;
+    font-size: 2vh;
+}
+#mediaIcon{
+    height: 8vh;
+    width: 18vw;
+    cursor: pointer;
+}
+
+
+#backToTop{
+    height: 4vh;
+    width: 3vw;
+    background-color:orange;
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    line-height: 4vh;
+    float: right;
+    margin: 92vh 95vw;
+    z-index: 5;
+    position: fixed;
+    display: none;
+}
+
+
+
+
+.explorePages{
+    margin-left: 81vw;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+.explorePages:hover{
+    color: #FBC252;
+}
+
+
+
+
+/* inner pages */
+
+#visaguide{
+    margin-top: 10vh;
+    height: 120vh;
+    width: 100vw;
+    padding:0vh 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2vh;
+}
+#innerHomeButDiv{
+    height: 8vh;
+    width: 10vw;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+#glance{
+    margin-top: 10vh;
+    height: 300vh;
+    width: 100vw;
+    padding:0vh 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2vh;
+}
+
+#travelTip{
+    margin-top: 10vh;
+    height: 190vh;
+    width: 100vw;
+    padding:0vh 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2vh;
+}
+
+#airport{
+    margin-top: 10vh;
+    height: 180vh;
+    width: 100vw;
+    padding:0vh 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2vh;
+}
+
+.homeInnerPage{
+    display: none;
+}
+
+.home:hover{
+    color: #FBC252;
+}
+
+.back:hover{
+    color: #FBC252;
+}
+

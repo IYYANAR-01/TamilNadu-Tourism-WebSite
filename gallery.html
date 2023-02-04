@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="gallery.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/79b594a165.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="bigSizePhotoDiv">
+        <div id="bigImg"></div>
+        <i class="fa-solid fa-circle-xmark" id="closeBigImg" style="margin: 2vh 95vw;cursor: pointer;"></i>
+    </div>
+
+    <div id="header">
+        <!-- <video height="100%" width="100%"  muted autoplay loop id="galleryMainVideo" ><source src="galleryImg/galleryMainVideo.mp4" type="video/mp4"></video>  -->
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5s5wZqhljWQ?autoplay=1&loop=1&controls=0&mute=1&playlist=5s5wZqhljWQ&start=1&end=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div id="videoHide"></div>
+    </div>
+    <div id="galleryBody">
+        <div id="photosDiv" style="margin:0vh 2vw">
+            <h2 id="photoTop" style="margin-top:10vh ;">Place of Interest</h2>
+            <div id="placeOfInterestPhotosDiv">
+
+            </div>
+
+            <div id="backToTopGallery" ><a href="#photoTop"><i class="fa-solid fa-angle-up"></i></a></div>
+
+            
+            <h2 style="margin-top:10vh ;">Adventure</h2>
+            <div id="adventurePhotosDiv">
+
+            </div>
+
+
+
+            <h2 style="margin-top:10vh ;">Art & Culture</h2>
+            <div id="artCulturePhotosDiv">
+
+            </div>
+
+            <h2 style="margin-top:10vh ;">Beaches</h2>
+            <div id="beachPhotosDiv">
+
+            </div>
+
+            <h2 style="margin-top:10vh ;">Cuisine</h2>
+            <div id="cuisinePhotosDiv">
+
+            </div>
+
+            <h2 style="margin-top:10vh ;">Hills</h2>
+            <div id="hillsPhotosDiv">
+
+            </div>
+
+
+
+            <h2 style="margin-top:10vh ;">Water Falls</h2>
+            <div id="waterFallsPhotosDiv">
+
+            </div>
+
+            <h2 style="margin-top:10vh ;">Wild Life</h2>
+            <div id="wildlifePhotosDiv">
+
+            </div>
+
+            <h1 style="text-align: center;margin-top: 15vh;">VIDEOS</h1>
+
+            <div id="videoContainer">
+                <div class="videoDiv" >
+                    <div id="videoThumbnail" >
+                        <img src="galleryImg/artCultureImg/img1.png" class="clic" />
+                        <h1 class="clicText">Culture</h1>
+                    </div>
+                    <div class="galleryMainVideo1"><iframe width="100%" height="110%" src="https://www.youtube.com/embed/bbg0Sn4Sdo8?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop" allowfullscreen ></iframe></div>    
+                </div>
+    
+    
+                <div class="videoDiv">
+                    <div id="videoThumbnail">
+                        <img src="galleryImg/adventureImgs/img2.png" class="clic"/>
+                        <h1 class="clicText">Adventure</h1>
+                    </div>
+
+                    <div class="galleryMainVideo1"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/dlalGWTmfK4?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe></div>    
+                </div>
+    
+    
+    
+                <div class="videoDiv">
+
+                    <div id="videoThumbnail" >
+                        <img src="galleryImg/beachImg/img2.png" class="clic"/>
+                        <h1 class="clicText">Beaches</h1>
+                    </div>
+                    <div class="galleryMainVideo1"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/9DZc4YKlsBo?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe></div>    
+                </div>
+    
+    
+                <div class="videoDiv">
+                    <div id="videoThumbnail">
+                        <img src="galleryImg/cuisineImg/img8.png" class="clic"/>
+                        <h1 class="clicText">Cuisine</h1>
+                    </div>
+
+                    <div class="galleryMainVideo1"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/K5GJzxMSy6Y?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe></div>    
+                </div>
+    
+                <div class="videoDiv">
+
+                    <div id="videoThumbnail" >
+                        <img src="galleryImg/waterFallsImg/img4.png" class="clic"/>
+                        <h1 class="clicText">Water Falls</h1>
+                    </div>
+                    <div class="galleryMainVideo1"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/SGXkcor73oE?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>    
+                </div>
+    
+                <div class="videoDiv">
+                    <div id="videoThumbnail">
+                        <img src="galleryImg/wildlifeImg/img1.png" class="clic"/>
+                        <h1 class="clicText">Eco Tourism</h1>
+                    </div>
+
+                    <div class="galleryMainVideo1"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/_6GOc2zuBxw?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe></div>    
+                </div>
+    
+            </div>
+
+        
+        </div>
+        
+    </div>
+
+    <hr style="margin-top:12vh;">
+        
+    <div id="footer">
+        <span>Toll Free No: 1800-425-31111 (Within India only) Department of Tourism, Government of Tamil Nadu, #2, Wallajah Road, Chennai - 600002<br><br>
+            Fax: +044 25333385, 25333567 | Email: tourism@tn.gov.in</span>
+
+        <span>All rights reserved © Tamil Nadu Tourism 2023. Copyright | Terms of Use | Cookie Policy | Contact Us<br><br>
+            Developed & Maintained by Invis Private Limited.</span>
+
+        <img src="homeImg/socialMediaIcon.png" alt="media" id="mediaIcon">
+    </div>
+
+
+
+    <script src="script.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,341 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+#expMain{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/mahabalipuram-1654870108_c538505993052d39e713.webp');
+    background-size: 99.9% 99.9%;
+    position: fixed;
+    transition: background-image 1s;
+}
+#expHead{
+    text-align: center;
+    margin-top: 52vh;
+    animation: text 3s ;
+}
+.expHeadPara{
+    margin-left: 3.5vw;
+    color: gray;
+    line-height: 1.5;
+}
+.exploreButs{
+    margin-left: 25vw;
+}
+
+@keyframes text {
+    0%{
+        color:transparent;
+        margin-top: 60vh;
+    }
+    50%{
+        letter-spacing: 15px;
+        margin-top: 52vh;
+    }
+}
+
+#expBody{
+    height: 800vh;
+    width: 100vw;
+    position: absolute;
+    font-size: 5vh;
+    color: white;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(5,1fr);
+}
+
+.expOutDivs{
+    height: 25vh;
+    width: 35vw;
+    background-color:white;
+    color: black;
+    font-size: 2vh;
+    border-radius: .5vw;
+    cursor: pointer;
+    transition:transform 2s;
+}
+.expOutDivs:hover{
+    transform: scale(1.1);
+}
+.exploreButs:hover{
+    color: rgb(247, 201, 27);
+}
+
+#footer{
+    height: 40vh;
+    width: 100vw;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    color: #f0f8ff;
+    /* margin-top: 12vh; */
+    font-size: 2vh;
+}
+#mediaIcon{
+    height: 8vh;
+    width: 18vw;
+    cursor: pointer;
+}
+
+
+
+
+
+/* for inner pages common */
+
+
+
+
+#hillsTopButsOuter{
+    height: 10vh;
+    width: 100vw;
+    background-color: #F7EFE5;
+    /* margin-top: -18px; */
+}
+#hillsTopButs{
+    height: 10vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2.5vh;
+    margin-left: 2.5em;
+    font-weight:lighter;
+    cursor: pointer;
+}
+
+#backDestButs:hover{
+    color: #FBC252;
+}
+
+.expInnerPages{
+    display: none;
+}
+
+
+
+
+
+
+/* adventure page */
+
+#expAdvenPage{
+    height: 200vh;
+    width: 100vw;
+    display: none;
+}
+#advenPageHeader{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/adventure-1655273172_885fedaec4cb2ae37f70.webp");
+    background-size: 100% 100%;
+    color: white;
+    font-size: 5vh;
+}
+
+
+#advenPageBody{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#advenPageBodyInner{
+    height: 100%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.advenPageImgDiv{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.advenPageImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 2s;
+}
+.advenPageImg:hover{
+    transform: scale(1.2);
+}
+.advenPageText{
+    position: absolute;
+    color: white;
+    margin:-5vh 1vw;
+}
+
+
+
+
+/* Food page */
+
+#expFoodPage{
+    height: 200vh;
+    width: 100vw;
+    display: none;
+}
+#foodPageHeader{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/eat-drink-1655273848_200510b8ac9ba7bf40af.webp");
+    background-size: 100% 100%;
+    color: white;
+    font-size: 5vh;
+}
+
+
+#foodPageBody{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#foodPageBodyInner{
+    height: 100%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.foodPageImgDiv{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.foodPageImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 2s;
+}
+.foodPageImg:hover{
+    transform: scale(1.2);
+}
+.foodPageText{
+    position: absolute;
+    color: white;
+    margin:-5vh 1vw;
+}
+
+
+
+
+/* Festival page */
+
+#expFestPage{
+    height: 200vh;
+    width: 100vw;
+    display: none;
+}
+#festPageHeader{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/events-1657873245_ef3449a214d0ad06f72c.webp");
+    background-size: 100% 100%;
+    color: white;
+    font-size: 5vh;
+}
+
+
+#festPageBody{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#festPageBodyInner{
+    height: 100%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.festPageImgDiv{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.festPageImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 2s;
+}
+.festPageImg:hover{
+    transform: scale(1.2);
+}
+.festPageText{
+    position: absolute;
+    color: white;
+    margin:-5vh 1vw;
+}
+
+
+
+
+
+
+
+/* Spritual page */
+
+#expSpritPage{
+    height: 200vh;
+    width: 100vw;
+    display: none;
+}
+#spritPageHeader{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/gangaikonda-cholapuram-1653462626_d1ad072dfb78c46813de.webp");
+    background-size: 100% 100%;
+    color: white;
+    font-size: 5vh;
+}
+
+
+#spritPageBody{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#spritPageBodyInner{
+    height: 120%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.spritPageImgDiv{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.spritPageImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 2s;
+}
+.spritPageImg:hover{
+    transform: scale(1.2);
+}
+.spritPageText{
+    position: absolute;
+    color: white;
+    margin:-5vh 1vw;
+}

@@ -1,0 +1,371 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#destTopUp{
+    transition: 1s margin;
+}
+#destMainVideoDiv{
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content:center;
+    transition: 2s margin;
+}
+#destVideoHead{
+    font-size: 10vh;
+    position: absolute;
+    padding-top: 25%;
+    height: 102%;
+    width: 102%;
+    text-align: center;
+    -webkit-text-stroke: 0.3vh white;
+    color: transparent;
+}
+
+#slideDown{
+    height: 10vh;
+    width: 10vw;
+    background-color: black;
+    position: absolute;
+    margin-top:88vh;
+    color: white;
+    text-align: center;
+    line-height: 10vh;
+    animation: mymove 3s infinite;
+}
+@keyframes mymove {
+    0%,50%,100%{
+        font-size: 6vh;
+    }
+    25%,75%{
+        font-size: 3vh;
+    }
+}
+
+#destBottomBody{
+    height: 100vh;
+    width: 100vw;
+    font-size: 2vh;
+    /* display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr); */
+    /* display: flex;
+    flex-direction: row; */
+    /* flex-wrap: wrap; */
+}
+
+.destDivs{
+    height: 50%;
+    width: 50%;
+    overflow: hidden;
+    z-index: 4;
+    cursor: pointer;
+    float: left;
+}
+.destImg{
+    /* z-index: 4; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: 2s all;
+}
+.destImg:hover{
+    transform: scale(1.3);
+}
+
+.destText{
+    position: absolute;
+    color: white;
+    margin: 30vh -45vw;
+}
+
+
+.destInnerPages{
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    background-color: #FFFBF5;
+    z-index: 10;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#hillsPageHeader{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    font-size: 5vh;
+    color: white;
+}
+
+#hillsTopButsOuter{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(230, 230, 230);
+    /* margin-top: -18px; */
+}
+#hillsTopButs{
+    height: 10vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2.5vh;
+    margin-left: 2.5em;
+    font-weight:lighter;
+    cursor: pointer;
+}
+
+#backDestButs:hover{
+    color: #FBC252;
+}
+
+
+#hillsPageBody{
+    height: 125vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#hillsPageBodyInner{
+    height: 125vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.hillsPageImgDiv{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    position: relative;
+}
+.hillsPageImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition:2s all;
+    cursor: pointer;
+}
+.hillsPageImg:hover{
+    transform: scale(1.3);
+}
+.hillsPageText{
+    position: absolute;
+    margin: -10vh 2.5vw;
+}
+
+
+
+#beachesPageBody{
+    height: 135vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#beachesPageBodyInner{
+    height: 135vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.beachesPageImgDiv{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+.beachesPageImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition:2s all;
+}
+.beachesPageImg:hover{
+    transform: scale(1.3);
+}
+.beachesPageText{
+    position: absolute;
+    margin: -10vh 2.5vw;
+}
+
+
+
+
+#pilgrimPageBody{
+    height: 150vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#pilgrimPageBodyInner{
+    height: 150vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.pilgrimPageImgDiv{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+.pilgrimPageImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition:2s all;
+}
+.pilgrimPageImg:hover{
+    transform: scale(1.3);
+}
+.pilgrimPageText{
+    position: absolute;
+    margin: -10vh 2.5vw;
+}
+
+
+
+
+
+
+#waterfallsPageBody{
+    height: 125vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#waterfallsPageBodyInner{
+    height: 125vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.waterfallsPageImgDiv{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+.waterfallsPageImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition:2s all;
+}
+.waterfallsPageImg:hover{
+    transform: scale(1.3);
+}
+.waterfallsPageText{
+    position: absolute;
+    margin: -10vh 2.5vw;
+}
+
+
+
+.innerPage{
+    font-size: 1.5vh;
+}
+
+
+
+#footer{
+    height: 40vh;
+    width: 100vw;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    color: #f0f8ff;
+    margin-top: 0vh;
+    font-size: 2vh;
+}
+#mediaIcon{
+    height: 8vh;
+    width: 18vw;
+    cursor: pointer;
+}
+
+.innerPage{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* inner hills page */
+
+
+.innerHillsPage{
+    height: 200vh;
+    width:100vw;
+    display: none;
+}
+.innerHillsImg{
+    height: 100vh;
+    width: 100vw;
+}
+.innerHillsBody{
+    color: gray;
+    padding:10vh 25vh;
+    font-size: 2.5vh;
+}
+.DistAboutHead{
+    color: rgb(181, 181, 181);
+    font-size: 3vh;
+}
+.innerHillsHead{
+    color: white;
+    margin: -15vh 5vw;
+    font-size: 6vh;
+}
+
+
+.innerBeachesPage{
+    height: 200vh;
+    width:100vw;
+    display: none;
+}
+.innerPilgrimPage{
+    height: 200vh;
+    width:100vw;
+    display: none;
+}
+.innerWaterfallsPage{
+    height: 200vh;
+    width:100vw;
+    display: none;
+}
+
+
+
+
+.ytp-pause-overlay{
+    display: none;
+}
+.ytp-more-videos-view ytp-scroll-min{
+    display: none;
+}
